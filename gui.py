@@ -640,7 +640,7 @@ class PumperSettings(ctk.CTkToplevel):
 		noteLabel = ctk.CTkLabel(self, text= "Please specify the pumped output file size (in MB).\n Note: If the size of the stub is already greater than the\n provided size, nothing happens.", font= self.font)
 		noteLabel.grid(row= 0, column= 0, columnspan= 3, padx= 10)
 
-		limitEntry = ctk.CTkEntry(self, text_color= "white", textvariable= self.limitVar, font= self.font)
+		limitEntry = ctk.CTkEntry(self, text_color= "green", textvariable= self.limitVar, font= self.font)
 		limitEntry.grid(row= 1, column= 1, padx= 10, pady= 10)
 		limitEntry.bind("<KeyRelease>", self.on_limit_change)
 
